@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Mail, Phone, Linkedin } from "lucide-react";
 
@@ -11,13 +14,79 @@ const links = [
 ];
 
 export function Header() {
-  return <header className="header">
-    <div className="nav">
-      <Link href="/" className="logo"><img src="/logo-header.png" alt="Clean Top Off"/></Link>
-      <nav>{links.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}</nav>
-      <Link href="/contact" className="header-cta">Get a Free Assessment <ArrowRight size={15}/></Link>
-    </div>
-  </header>
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <header className="header">
+      <div className="nav">
+
+        <Link
+          href="/"
+          className="logo"
+          onClick={() => setMenuOpen(false)}
+        >
+          <img src="/logo-header.png" alt="Clean Top Off" />
+        </Link>
+
+        <nav>
+          {links.map(([label, href]) => (
+            <Link
+              key={href}
+              href={href}
+              onClick={() => setMenuOpen(false)}
+            >
+              {label}
+            </Link>
+          ))}
+        </nav>
+
+        <Link
+          href="/contact"
+          className="header-cta"
+          onClick={() => setMenuOpen(false)}
+        >
+          Get a Free Assessment <ArrowRight size={15} />
+        </Link>
+
+        <button
+          type="button"
+          className={`mobile-menu-toggle ${menuOpen ? "open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+      {menuOpen && (
+        <div className="mobile-menu">
+
+          {links.map(([label, href]) => (
+            <Link
+              key={href}
+              href={href}
+              onClick={() => setMenuOpen(false)}
+            >
+              {label}
+            </Link>
+          ))}
+
+          <Link
+            href="/contact"
+            className="mobile-menu-cta"
+            onClick={() => setMenuOpen(false)}
+          >
+            Get a Free Assessment <ArrowRight size={15} />
+          </Link>
+
+        </div>
+      )}
+    </header>
+  );
 }
 
 export function Footer() {

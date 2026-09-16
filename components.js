@@ -40,7 +40,7 @@ export function Footer() {
       <div className="footer-column">
         <span>Get Started</span>
         <Link href="/pricing">Pricing</Link>
-        <a href="/clean-top-off-2026.pdf" download>Download Company Brochure</a>
+        <a href="/Clean Top Off operational brochure.pdf" download>Download Company Brochure</a>
         <Link href="/contact">Free Assessment</Link>
       </div>
       <div className="footer-callout">

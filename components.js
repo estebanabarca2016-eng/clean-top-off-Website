@@ -42,7 +42,7 @@ export function Header() {
 
         <Link
           href="/contact"
-          className="header-cta"
+          className="header-cta desktop-cta"
           onClick={() => setMenuOpen(false)}
         >
           Get a Free Assessment <ArrowRight size={15} />

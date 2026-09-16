@@ -317,10 +317,10 @@
 
 @media (max-width: 768px) {
 
-  .nav > nav,
-  .nav > .header-cta {
-    display: none;
-  }
+.nav > nav,
+.nav > .desktop-cta {
+  display: none !important;
+}
 
   .mobile-menu-toggle {
     display: flex;

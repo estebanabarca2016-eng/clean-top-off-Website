@@ -31,7 +31,7 @@ export default function PricingLeadForm({ defaultPlan = "" }) {
   return (
     <form
       className="assessment-form"
-      action="https://formsubmit.co/info@cleantopoff.com"
+      action="https://formspree.io/f/xzezbpvj"
       method="POST"
     >
       <input

@@ -27,7 +27,7 @@ export function Footer() {
         <img className="footer-logo" src="/logo-footer.png" alt="Clean Top Off"/>
         <div className="contact-lines">
           <a href="mailto:info@cleantopoff.com"><Mail size={16}/> info@cleantopoff.com</a>
-          <a href="tel:+19729141632"><Phone size={16}/> +1 (972) 914-1632</a>
+          <a href="tel:+15514304361"><Phone size={16}/> +1 (551) 430-4361</a>
         </div>
       </div>
       <div className="footer-column">

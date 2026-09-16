@@ -56,7 +56,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Become a Client Form
+          Download Become a Client Form
         </a>
 
         <Link href="/contact">Free Assessment</Link>

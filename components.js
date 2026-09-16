@@ -26,10 +26,15 @@ export function Footer() {
       <div>
         <img className="footer-logo" src="/logo-footer.png" alt="Clean Top Off"/>
         <div className="contact-lines">
-          <a href="mailto:info@cleantopoff.com"><Mail size={16}/> info@cleantopoff.com</a>
-          <a href="tel:+15514304361"><Phone size={16}/> +1 (551) 430-4361</a>
+          <a href="mailto:info@cleantopoff.com">
+            <Mail size={16}/> info@cleantopoff.com
+          </a>
+          <a href="tel:+15514304361">
+            <Phone size={16}/> +1 (551) 430-4361
+          </a>
         </div>
       </div>
+
       <div className="footer-column">
         <span>Company</span>
         <Link href="/about">About</Link>
@@ -37,21 +42,47 @@ export function Footer() {
         <Link href="/benefits">Benefits</Link>
         <Link href="/contact">Contact</Link>
       </div>
+
       <div className="footer-column">
         <span>Get Started</span>
         <Link href="/pricing">Pricing</Link>
-        <a href="/Clean Top Off operational brochure.pdf" download>Download Company Brochure</a>
+
+        <a href="/Clean Top Off operational brochure.pdf" download>
+          Download Company Brochure
+        </a>
+
+        <a
+          href="/Become a client form Clean Top Off.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Become a Client Form
+        </a>
+
         <Link href="/contact">Free Assessment</Link>
       </div>
+
       <div className="footer-callout">
         <span>READY TO FLY SMARTER?</span>
         <h3>Make every gallon work harder.</h3>
-        <Link href="/contact" className="footer-button">Get a Free Assessment <ArrowRight size={16}/></Link>
+        <Link href="/contact" className="footer-button">
+          Get a Free Assessment <ArrowRight size={16}/>
+        </Link>
       </div>
     </div>
+
     <div className="footer-bottom">
       <span>© 2026 Clean Top Off. All rights reserved.</span>
-      <div className="footer-social"><a href="#" aria-label="LinkedIn"><Linkedin size={18}/></a><a href="mailto:info@cleantopoff.com" aria-label="Email"><Mail size={18}/></a></div>
+
+      <div className="footer-social">
+        <a href="#" aria-label="LinkedIn">
+          <Linkedin size={18}/>
+        </a>
+        <a href="mailto:info@cleantopoff.com" aria-label="Email">
+          <Mail size={18}/>
+        </a>
+      </div>
+
       <span>Fuel smarter. Fly further.</span>
     </div>
   </footer>

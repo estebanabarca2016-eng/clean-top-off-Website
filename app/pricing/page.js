@@ -12,9 +12,8 @@ const lightFeatures = [
 
 const proFeatures = [
   ...lightFeatures,
-  "Unlimited optimization meetings",
+  "Monthly optimization meeting",
   "Flight-by-flight operations analysis",
-  "Trip-specific fuel optimization",
   "FBO/fuel-stop comparison",
 ];
 

@@ -3,13 +3,11 @@ import { Hero } from "../../components";
 import PricingLeadForm from "./PricingLeadForm";
 
 const lightFeatures = [
-  "Negotiated fuel pricing",
-  "FBO guidance",
-  "Fuel market insights",
-  "Personalized support",
-  "Monthly savings report",
-  "Monthly optimization meeting",
-  "Reseller Rewards Optimization",
+  "Access to negotiated fuel pricing",
+  "FBO & fee optimization",
+  "Automated fuel market updates",
+  "Automated savings summary",
+  "Rewards & rebate optimization",
 ];
 
 const proFeatures = [
@@ -17,7 +15,6 @@ const proFeatures = [
   "Unlimited optimization meetings",
   "Flight-by-flight operations analysis",
   "Trip-specific fuel optimization",
-  "Tankering analysis",
   "FBO/fuel-stop comparison",
 ];
 
@@ -30,11 +27,11 @@ function PlanCard({ type }) {
       {pro && <span className="badge">MOST POPULAR</span>}
 
       <h3>{pro ? "PRO" : "LIGHT"}</h3>
-      <div className="plan-kicker">{pro ? "COMPLETE FUEL OPTIMIZATION" : "FUEL OPTIMIZATION ESSENTIALS"}</div>
+      <div className="plan-kicker">{pro ? "COMPLETE FUEL OPTIMIZATION" : "AUTOMATED FUEL SAVINGS"}</div>
       <p className="plan-description">
         {pro
-          ? "Full fuel optimization with flight-by-flight analysis and unlimited access to our experts."
-          : "Get expert fuel guidance and insights with the essentials you need to start saving."}
+          ? "Everything in Light, plus hands-on flight-by-flight analysis and direct access to our fuel optimization team."
+          : "Automated fuel savings that work in the background without meetings or ongoing coordination."}
       </p>
 
       <div className="pricing-divider" />
